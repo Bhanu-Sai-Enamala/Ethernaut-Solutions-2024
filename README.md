@@ -83,19 +83,19 @@ Follow these steps to install Foundry on your machine:
 
 You need to create a `.env` file in the root directory of the project to store your Ethereum RPC URL and private key. This file will allow the script to interact with the Ethereum network.
 
-    1. Create a file named `.env` in the root directory of the project.
-    2. Open the .env file and add the following content
-
-          RPC_URL=https://sepolia.infura.io/v3/your-infura-project-id
-          PRIVATE_KEY=your-private-key
-          
-    3. Replace your-infura-project-id with the project ID from your Infura account (or other provider).Replace your-private-key with the private key of the Ethereum account you want to use for deploying/interacting with contracts.
-    4. Save the .env file. This file should now securely store your environment variables for the script to use.
-    5. Before running any script, load the .env variables into your shell session with:
-   
-        source .env
-    
-    6. Your environment variables are now set up and loaded, ready to interact with the Ethereum network.
+1. Create a file named `.env` in the root directory of the project.
+2. Open the .env file and add the following content
+ ```solidity
+    RPC_URL=https://sepolia.infura.io/v3/your-infura-project-id
+    PRIVATE_KEY=your-private-key
+ ```  
+1. Replace your-infura-project-id with the project ID from your Infura account (or other provider).Replace your-private-key with the private key of the Ethereum account you want to use for deploying/interacting with contracts.
+2. Save the .env file. This file should now securely store your environment variables for the script to use.
+3. Before running any script, load the .env variables into your shell session with:
+ ```bash
+  source .env
+ ```
+1. Your environment variables are now set up and loaded, ready to interact with the Ethereum network.
 
 ## 6. Connect Your Wallet and Get an Instance from Ethernaut
 
