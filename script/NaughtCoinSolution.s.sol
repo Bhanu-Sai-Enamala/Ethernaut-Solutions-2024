@@ -7,14 +7,14 @@ import "openzeppelin-contracts-08/token/ERC20/IERC20.sol";
 contract NaughtCoinSolution is Script {
 
     // Replace with the instance address of the NaughtCoin contract
-    address public constant naughtCoinAddress = 0xYourInstanceAddressHere;
+    address naughtCoinAddress = 0xYourInstanceAddressHere;
     // Replace with the player address (the address being locked by the time lock)
-    address public constant player = 0xYourPlayerAddressHere;
+    address player = 0xYourPlayerAddressHere;
     // Replace with the secondary address that will remove the tokens
-    address public constant secondaryAddress = 0xYourSecondaryAddressHere;
+    address secondaryAddress = 0xYourSecondaryAddressHere;
 
     // Replace this with the secondaryAddress's private key
-    uint256 private constant SECONDARY_PRIVATE_KEY = 0xYourSecondaryPrivateKeyHere;
+    uint256 SECONDARY_PRIVATE_KEY = 0xYourSecondaryPrivateKeyHere;
 
     function run() external {
         //tart broadcasting with the player's private key to approve the secondary address
