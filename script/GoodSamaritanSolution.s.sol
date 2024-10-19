@@ -5,7 +5,7 @@ import "../src/GoodSamaritan.sol";  // Import the challenge contract
 import "forge-std/Script.sol";  // Import Foundry's script utilities
 
 contract GoodSamaritanExploit is Script {
-    address public instanceAddress = 0x4E5179560A0A4E20d52bA0Ab369aE0302EF869c4;  // Replace with actual instance address
+    address public instanceAddress = 0xYourInstanceAddressHere;  // Replace with actual instance address
 
     // Declare the attacker contract instance
     ExploitAttacker public attackerContract;
