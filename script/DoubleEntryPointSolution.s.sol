@@ -8,7 +8,7 @@ import "forge-std/Script.sol";  // Foundry utilities for scripting
 contract DoubleEntryPointSolution is Script {
 
     // Address of the DoubleEntryPoint instance (replace with your deployed instance address)
-    address public detInstanceAddress = 0xca621944318795d442214D410d1cA77a0b3CdF8c;
+    address public detInstanceAddress = 0xYourInstanceAddressHere;
 
     // Extract the Forta contract address from the DoubleEntryPoint instance
     address public fortaContractAddress = address(DoubleEntryPoint(detInstanceAddress).forta());
